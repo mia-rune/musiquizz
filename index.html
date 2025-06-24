@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="./index.html">MUSI'QUIZZ</a></h1>
+    </header>
+
+    <main>
+        <div class="score">
+            <p>Tour : <span id="turn">1</span> / 5</p>
+            <p>Score : <span id="score">0</span> / 5</p>
+        </div>
+
+        <section id="content">
+
+            <div>
+                <h2><span id="questionNmb">Question n°1</span></h2>
+                <p id="question"></p>
+            </div>
+
+            <div class="cardAnswers">
+                <div class="answersTopRow">
+                    <div class="answerDiv" onclick="reply(this)">
+                        <p class="answer"></p>
+                    </div>
+
+                    <div class="answerDiv" onclick="reply(this)">
+                        <p class="answer"></p>
+                    </div>
+                </div>
+
+                <div class="answersBotRow">
+                    <div class="answerDiv" onclick="reply(this)">
+                        <p class="answer"></p>
+                    </div>
+
+                    <div class="answerDiv" onclick="reply(this)">
+                        <p class="answer"></p>
+                    </div>
+                </div>
+
+            </div>
+            <button id="startBtn">Commencer</button>
+            <div>
+                <p id="result"></p>
+                <p class="info"></p>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
