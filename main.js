@@ -96,7 +96,7 @@ function displayAnswer() {
 
 function reply(elem) {
     turnContainer.textContent = turn
-    let userAnswer = elem.textContent.trim('')
+    let userAnswer = elem.textContent
     if (userAnswer == questionList[count].goodAnswer) {
         score++
         scoreContainer.textContent = score
@@ -123,7 +123,7 @@ function reply(elem) {
         }
         document.querySelector(".cardAnswers").style.display = "none"
         resultContainer.style.display = "none"
-        infoContainer.style.display = "none"
+        infoContainer.textContent = "Clique sur la bannière ''Musi'Quizz'' pour recommencer."
     }
 }
 
