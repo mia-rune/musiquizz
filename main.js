@@ -96,7 +96,7 @@ function displayAnswer() {
 
 function reply(elem) {
     turnContainer.textContent = turn
-    let userAnswer = elem.textContent
+    let userAnswer = elem.textContent.trim('')
     if (userAnswer == questionList[count].goodAnswer) {
         score++
         scoreContainer.textContent = score
